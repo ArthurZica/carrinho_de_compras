@@ -1,0 +1,19 @@
+.header {
+  box-sizing: border-box;
+  max-width: 100%;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;	
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+  width: 100%; 
+  background-color: #05345a;
+  color: rgb(247, 247, 247);
+}
