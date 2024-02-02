@@ -3,10 +3,10 @@
 
 **Como executar:**
 
-Para instalar as depêndencias:
-Execute o comando `npm install`
+instale as depêndencias com o comando:
+ comando `npm install`
 
-Para executar o projeto utilize o comando:
+Execute o projeto com o comando:
 `npm run dev`
 
 Após isso no seu terminal aparecerá uma mensagem como essa:
