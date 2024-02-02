@@ -1,8 +1,16 @@
-# React + Vite
+# Carrinho de compras
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+#Como executar:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para instalar as depêndencias:
+Execute o comando `npm install`
+
+Para executar o projeto utilize o comando:
+`npm run dev`
+
+Após isso no seu terminal aparecerá uma mensagem como essa:
+
+![image](https://github.com/ArthurZica/carrinho_de_compras/assets/95576985/cc2baad2-1eb9-41ae-94ef-585359885ab9)
+
+Abra seu navegador e digite a url presente em "local:"
