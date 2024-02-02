@@ -1,21 +1,50 @@
 #headerCarrinho{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: justify;
     justify-content: center;
     text-align: center;
 }
 
 .carrinhoContainer{
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem;
+    grid-template-columns: 1fr 1fr;
 }
 
-#produtosAdicionados{
-    margin: 1rem;
+.cardsCarrinho{
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 26rem;
+    overflow: auto;
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#produtoCarrinho {
+    box-sizing: border-box;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* make this funtional in mobile */
+@media (max-width: 768px) {
+    .carrinhoContainer{
+        grid-template-columns: 1fr;
+    }
 }

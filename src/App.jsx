@@ -18,19 +18,16 @@ function App() {
     { id: 1, nome: "Produto 1", preco: 199.99 },
     { id: 2, nome: "Produto 2", preco: 225.79 },
     { id: 3, nome: "Produto 3", preco: 219.99 },
-    { id: 4, nome: "Produto 4", preco: 159.99 },
   ];
 
-  function adicionarNoCarrinho(produto) {
-    setCarrinho((prevCarrinho) => [...prevCarrinho, produto]);
-  }
-
   return (
-    <CarrinhoContext.Provider value={{ produtosDisponiveis: produtos, carrinho, setCarrinho }}>
+    <CarrinhoContext.Provider
+      value={{ produtosDisponiveis: produtos, carrinho, setCarrinho }}
+    >
       <AppHeader setOpenPage={setOpenPage} />
       <div className="container">
-       <HomePage openPage={openPage} adicionarNoCarrinho={adicionarNoCarrinho} />
-        <Carrinho openPage={openPage} />
+        <HomePage openPage={openPage} />
+        <Carrinho openPage={openPage} setOpenPage={setOpenPage} />
       </div>
     </CarrinhoContext.Provider>
   );
