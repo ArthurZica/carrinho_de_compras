@@ -1,7 +1,7 @@
 # Carrinho de compras
 
 
-#Como executar:
+**Como executar:**
 
 Para instalar as depêndencias:
 Execute o comando `npm install`
