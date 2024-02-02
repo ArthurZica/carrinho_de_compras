@@ -1,21 +1,13 @@
+/* eslint-disable react/prop-types */
 import { useContext } from "react";
 import { CarrinhoContext } from "../../App";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import "./carrinho.css";
-import { Button } from "@mui/material";
 import ProdutosAdicionados from "./ProdutosAdicionados/ProdutosAdicionados";
 import ResumoCompra from "./ResumoCompra/ResumoCompra";
 
 export default function Carrinho({ openPage, setOpenPage }) {
-  const { carrinho, setCarrinho } = useContext(CarrinhoContext);
-
-  function calculaTotal() {
-    carrinho.forEach((produto) => {
-      let total = produto.preco * produto.quantidade;
-      return total;
-    });
-  }
+  const { carrinho } = useContext(CarrinhoContext);
 
   return (
     <>

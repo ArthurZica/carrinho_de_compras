@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Button, Card, CardContent } from "@mui/material";
+import { Card, CardContent } from "@mui/material";
 import { useContext } from "react";
 import { CarrinhoContext } from "../../../App";
 
